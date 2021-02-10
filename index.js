@@ -14,10 +14,6 @@ app.use(cors());
 const messageStorage = [];
 let newMsgId = 0;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 app.get("/message", (req, res) => {
   res.json(messageStorage);
 });
